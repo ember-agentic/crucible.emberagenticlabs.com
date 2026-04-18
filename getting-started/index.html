@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-mwd2jfe2> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Getting started with Crucible Alpha — what to expect, how to work with agents, and tips for getting the most out of the system."><title>Getting Started — Crucible Alpha</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/getting-started.D24pdFc3.css"></head> <body data-astro-cid-mwd2jfe2> <header data-astro-cid-mwd2jfe2> <div class="container" data-astro-cid-mwd2jfe2> <a href="https://emberagenticlabs.com" class="logo" data-astro-cid-mwd2jfe2><span data-astro-cid-mwd2jfe2>Ember</span> Agentic Labs</a> <div class="header-links" data-astro-cid-mwd2jfe2> <a href="/" data-astro-cid-mwd2jfe2>Home</a> <a href="https://github.com/ember-agentic/crucible" target="_blank" rel="noopener" data-astro-cid-mwd2jfe2>GitHub</a> </div> </div> </header> <div class="container" data-astro-cid-mwd2jfe2> <div class="page-header" data-astro-cid-mwd2jfe2> <h1 data-astro-cid-mwd2jfe2>Getting Started with Crucible Alpha</h1> <p data-astro-cid-mwd2jfe2>
+What to expect, how to work with agents, and how to get the most out of the system.
+</p> </div> <div class="content" data-astro-cid-mwd2jfe2> <h2 data-astro-cid-mwd2jfe2>What Crucible Alpha is</h2> <p data-astro-cid-mwd2jfe2>
+Crucible Alpha is an early release that came out of a couple weeks of intensive building.
+        It works, it provides real productivity gains, and it represents <strong data-astro-cid-mwd2jfe2>only the tip
+        of the iceberg</strong> of what's possible with structured AI development.
+</p> <p data-astro-cid-mwd2jfe2>
+It's a <strong data-astro-cid-mwd2jfe2>best-effort system</strong>. The agents do a good job of following
+        the workflow, creating documents, and managing tasks &mdash; but it's not 100% automated.
+        You are an active participant, not a passive observer.
+</p> <div class="callout callout-warn" data-astro-cid-mwd2jfe2> <p data-astro-cid-mwd2jfe2> <strong data-astro-cid-mwd2jfe2>Set your expectations:</strong> Think of each agent as a capable but
+          new team member. They'll do good work, but they need direction.
+          You'll sometimes need to remind them to create tasks, update documents,
+          or search the knowledge base. This is by design &mdash; Crucible Pro
+          will lock this down with enforced structure and quality gates.
+</p> </div> <h2 data-astro-cid-mwd2jfe2>Install</h2> <div class="install-steps" data-astro-cid-mwd2jfe2> <div class="step-label" data-astro-cid-mwd2jfe2>1. Install</div> <code data-astro-cid-mwd2jfe2>curl -fsSL https://github.com/ember-agentic/crucible-releases/releases/download/v0.1.0-alpha/install.sh | bash</code> <div class="step-label" data-astro-cid-mwd2jfe2>2. Log in to Claude Code</div> <code data-astro-cid-mwd2jfe2>claude login</code> <div class="step-label" data-astro-cid-mwd2jfe2>3. Open your workspace</div> <code data-astro-cid-mwd2jfe2>code ~/workspaces/default</code> </div> <p style="font-size: 0.85rem; color: var(--text-dim);" data-astro-cid-mwd2jfe2>
+The installer downloads Crucible, installs the VS Code extension, sets up Node.js if needed,
+        and creates your first workspace with AI personas.
+</p> <p style="font-size: 0.85rem; color: var(--text-dim);" data-astro-cid-mwd2jfe2>
+Requires: macOS 11+, VS Code, Anthropic API access
+</p> <h2 data-astro-cid-mwd2jfe2>How to work with agents</h2> <p data-astro-cid-mwd2jfe2>
+Crucible gives you specialized AI personas &mdash; requirements, design,
+        architecture, implementation, testing, security, DevOps, and more. Each one has
+        a full chat interface through Claude Code and access to specialized MCP tools.
+</p> <p data-astro-cid-mwd2jfe2> <strong data-astro-cid-mwd2jfe2>Treat each agent like a person.</strong> Ask questions. Give feedback.
+        Push back on decisions you disagree with. The agents work best when you're
+        actively guiding them, not just watching.
+</p> <div class="callout" data-astro-cid-mwd2jfe2> <p data-astro-cid-mwd2jfe2><strong data-astro-cid-mwd2jfe2>The key things you need to do:</strong></p> </div> <ul data-astro-cid-mwd2jfe2> <li data-astro-cid-mwd2jfe2><strong data-astro-cid-mwd2jfe2>Create tasks</strong> &mdash; tell the agent what you want built, and ask it to create a Crucible task using the MCP tools</li> <li data-astro-cid-mwd2jfe2><strong data-astro-cid-mwd2jfe2>Remind agents to use MCP functions</strong> &mdash; sometimes the LLM will try to do things manually instead of using Crucible's tools. Nudge it: "use the Crucible tools to create that task" or "search the knowledge base first"</li> <li data-astro-cid-mwd2jfe2><strong data-astro-cid-mwd2jfe2>Ensure documents get created</strong> &mdash; requirements, designs, and architecture docs should be written as part of the workflow. If the agent skips this, ask for it</li> <li data-astro-cid-mwd2jfe2><strong data-astro-cid-mwd2jfe2>Complete tasks</strong> &mdash; when work is done, make sure the agent marks the task as complete with proper documentation</li> <li data-astro-cid-mwd2jfe2><strong data-astro-cid-mwd2jfe2>Search before creating</strong> &mdash; remind agents to search the knowledge base for existing work before starting something new</li> <li data-astro-cid-mwd2jfe2><strong data-astro-cid-mwd2jfe2>Review and sign off</strong> &mdash; the quality gates are there for a reason. Review what agents produce before moving on</li> </ul> <h2 data-astro-cid-mwd2jfe2>Tips for getting the most out of it</h2> <div class="tip" data-astro-cid-mwd2jfe2> <strong data-astro-cid-mwd2jfe2>Start small.</strong> Pick one feature or user story. Walk through the full
+        workflow &mdash; requirements, design, implementation, testing &mdash; before scaling up.
+        You'll learn the system faster this way.
+</div> <div class="tip" data-astro-cid-mwd2jfe2> <strong data-astro-cid-mwd2jfe2>Use the knowledge base.</strong> The more documents and artifacts you create,
+        the smarter the system gets. Prior requirements inform future design.
+        Past architecture decisions guide new implementation. Don't skip the docs.
+</div> <div class="tip" data-astro-cid-mwd2jfe2> <strong data-astro-cid-mwd2jfe2>Be specific with agents.</strong> Instead of "build a login page," try
+        "create a requirements doc for user authentication with OAuth support, then
+        create an implementation task." The more structure you give, the better the output.
+</div> <div class="tip" data-astro-cid-mwd2jfe2> <strong data-astro-cid-mwd2jfe2>Check the task board.</strong> The VS Code sidebar shows all tasks
+        grouped by status and persona. Use it to track what's in progress,
+        what's blocked, and what's done.
+</div> <div class="tip" data-astro-cid-mwd2jfe2> <strong data-astro-cid-mwd2jfe2>Don't fight the workflow.</strong> Requirements before design.
+        Design before implementation. Implementation before testing. The agents
+        work best when you follow the natural SDLC flow.
+</div> <h2 data-astro-cid-mwd2jfe2>What to expect</h2> <p data-astro-cid-mwd2jfe2>
+Crucible Alpha will sometimes surprise you with how well it handles complex
+        multi-file development. It will also sometimes forget to update a task or
+        skip a documentation step. That's normal at this stage.
+</p> <p data-astro-cid-mwd2jfe2>
+The system is <strong data-astro-cid-mwd2jfe2>genuinely useful</strong> &mdash; it was used to build
+        significantly more complex systems on top of itself. But it requires an engaged
+        human operator who understands what good software development looks like.
+</p> <p data-astro-cid-mwd2jfe2> <strong data-astro-cid-mwd2jfe2>Crucible Pro</strong> is in active development and will address these
+        gaps with enforced process structure, locked-in quality gates, multi-LLM support,
+        and predictable file organization. Alpha is the foundation.
+</p> <h2 data-astro-cid-mwd2jfe2>Getting help</h2> <p data-astro-cid-mwd2jfe2>
+Issues and questions: <a href="https://github.com/ember-agentic/crucible/issues" target="_blank" rel="noopener" data-astro-cid-mwd2jfe2>GitHub Issues</a><br data-astro-cid-mwd2jfe2>
+Contact: <a href="mailto:tony@emberagenticlabs.com" data-astro-cid-mwd2jfe2>tony@emberagenticlabs.com</a> </p> </div> </div> <footer data-astro-cid-mwd2jfe2> <div class="container" data-astro-cid-mwd2jfe2> <div class="footer-row" data-astro-cid-mwd2jfe2> <div class="footer-links" data-astro-cid-mwd2jfe2> <a href="/" data-astro-cid-mwd2jfe2>Home</a> <a href="https://github.com/ember-agentic/crucible" target="_blank" rel="noopener" data-astro-cid-mwd2jfe2>GitHub</a> <a href="https://emberagenticlabs.com" data-astro-cid-mwd2jfe2>Ember Agentic Labs</a> </div> <span data-astro-cid-mwd2jfe2>Built by <a href="https://gibbons-tony.github.io/" style="color: var(--ember);" data-astro-cid-mwd2jfe2>Tony Gibbons</a> &mdash; MIT License</span> </div> </div> </footer> </body></html>
