@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="a3-slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker>
+    <marker id="a3-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6F5AFA"/></marker>
+  </defs>
+
+  <rect width="880" height="470" fill="#ffffff"/>
+  <text x="440" y="26" fill="#1a1a1a" font-size="14" font-weight="700" text-anchor="middle">Two approaches to control — the same parts, wired two ways</text>
+
+  <!-- ================= LEFT PANEL: model-centered ================= -->
+  <rect x="22" y="44" width="362" height="404" rx="14" fill="#ffffff" stroke="#94a3b8" stroke-width="1.8"/>
+  <rect x="22" y="44" width="362" height="50" rx="14" fill="#f1f5f9"/>
+  <rect x="22" y="78" width="362" height="16" fill="#f1f5f9"/>
+  <line x1="22" y1="94" x2="384" y2="94" stroke="#dde3ea" stroke-width="1"/>
+  <text x="42" y="68" fill="#475569" font-size="15" font-weight="700">Model-centered</text>
+  <rect x="258" y="52" width="112" height="21" rx="10.5" fill="#eef2f7" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="314" y="66.5" fill="#64748b" font-size="10.5" text-anchor="middle" font-weight="600">Crucible alpha</text>
+  <text x="42" y="85" fill="#8a98a8" font-size="11.5">the model orchestrates; code is its tools</text>
+
+  <g stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 4">
+    <line x1="203" y1="208" x2="203" y2="156"/>
+    <line x1="168" y1="288" x2="124" y2="338"/>
+    <line x1="238" y1="288" x2="282" y2="340"/>
+  </g>
+  <g fill="#ffffff" stroke="#b6c0cd" stroke-width="1.5">
+    <rect x="169" y="128" width="68" height="28" rx="6"/>
+    <rect x="66"  y="338" width="78" height="28" rx="6"/>
+    <rect x="262" y="340" width="70" height="28" rx="6"/>
+  </g>
+  <g fill="#7a8696" font-size="12" text-anchor="middle">
+    <text x="203" y="147">code</text>
+    <text x="105" y="357">terminal</text>
+    <text x="297" y="359">files</text>
+  </g>
+  <circle cx="203" cy="248" r="52" fill="#f1f5f9" stroke="#64748b" stroke-width="2.2"/>
+  <text x="203" y="243" fill="#475569" font-size="12.5" font-weight="600" text-anchor="middle">LLM context</text>
+  <text x="203" y="259" fill="#475569" font-size="12.5" font-weight="600" text-anchor="middle">window</text>
+  <text x="203" y="275" fill="#64748b" font-size="10.5" text-anchor="middle">the orchestrator</text>
+
+  <text x="42" y="408" fill="#2f7d49" font-size="11.5">✓ much easier to build; works much of the time</text>
+  <text x="42" y="428" fill="#b23a26" font-size="11.5">✗ coherence frays as the project grows</text>
+
+  <!-- ================= vs ================= -->
+  <circle cx="440" cy="248" r="17" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="440" y="253" fill="#64748b" font-size="13" font-weight="700" text-anchor="middle">vs</text>
+
+  <!-- ================= RIGHT PANEL: record-centered ================= -->
+  <rect x="496" y="44" width="362" height="404" rx="14" fill="#fdfcff" stroke="#6F5AFA" stroke-width="1.8"/>
+  <rect x="496" y="44" width="362" height="50" rx="14" fill="#f1eefe"/>
+  <rect x="496" y="78" width="362" height="16" fill="#f1eefe"/>
+  <line x1="496" y1="94" x2="858" y2="94" stroke="#ddd7f7" stroke-width="1"/>
+  <text x="516" y="68" fill="#4a37c9" font-size="15" font-weight="700">Record-centered</text>
+  <rect x="744" y="52" width="100" height="21" rx="10.5" fill="#f1eefe" stroke="#c7bdf7" stroke-width="1"/>
+  <text x="794" y="66.5" fill="#5847d6" font-size="10.5" text-anchor="middle" font-weight="600">Crucible Pro</text>
+  <text x="516" y="85" fill="#8a82b8" font-size="11.5">the record orchestrates; the model is a step it calls</text>
+
+  <g fill="#ffffff" stroke="#cfcfda" stroke-width="1.4" font-size="11">
+    <rect x="520" y="192" width="92" height="26" rx="6"/>
+    <rect x="742" y="192" width="92" height="26" rx="6"/>
+    <rect x="520" y="318" width="92" height="26" rx="6"/>
+    <rect x="742" y="318" width="92" height="26" rx="6"/>
+  </g>
+  <g fill="#8a8a95" font-size="11" text-anchor="middle">
+    <text x="566" y="209">requirements</text>
+    <text x="788" y="209">designs</text>
+    <text x="566" y="335">code</text>
+    <text x="788" y="335">tests</text>
+  </g>
+  <g stroke="#d6d3f5" stroke-width="1.4">
+    <line x1="600" y1="218" x2="640" y2="250"/>
+    <line x1="754" y1="218" x2="714" y2="250"/>
+    <line x1="600" y1="318" x2="640" y2="288"/>
+    <line x1="754" y1="318" x2="714" y2="288"/>
+  </g>
+  <path d="M615,258 a62,13 0 0 1 124,0 v44 a62,13 0 0 1 -124,0 z" fill="#f1eefe" stroke="#6F5AFA" stroke-width="2.2"/>
+  <ellipse cx="677" cy="258" rx="62" ry="13" fill="#f1eefe" stroke="#6F5AFA" stroke-width="2.2"/>
+  <text x="677" y="282" fill="#4a37c9" font-size="12" font-weight="600" text-anchor="middle">the shared record</text>
+  <text x="677" y="296" fill="#6a6a99" font-size="9.5" text-anchor="middle">knowledge graph + state machines</text>
+  <text x="677" y="307" fill="#6a6a99" font-size="9.5" text-anchor="middle">the orchestrator</text>
+  <rect x="635" y="128" width="84" height="34" rx="8" fill="#ffffff" stroke="#6F5AFA" stroke-width="1.8"/>
+  <text x="677" y="142" fill="#4a37c9" font-size="11.5" font-weight="600" text-anchor="middle">LLM</text>
+  <text x="677" y="155" fill="#6a6a99" font-size="10" text-anchor="middle">a step it calls</text>
+  <line x1="663" y1="244" x2="663" y2="164" stroke="#6F5AFA" stroke-width="2.2" marker-end="url(#a3-purple)"/>
+  <text x="657" y="206" fill="#6a6a99" font-size="10" text-anchor="end">calls</text>
+  <line x1="691" y1="164" x2="691" y2="244" stroke="#6F5AFA" stroke-width="2.2" stroke-dasharray="5 4" marker-end="url(#a3-purple)"/>
+  <text x="697" y="220" fill="#6a6a99" font-size="10" text-anchor="start">writes back</text>
+
+  <text x="516" y="408" fill="#2f7d49" font-size="11.5">✓ deterministic; tighter control at scale</text>
+  <text x="516" y="428" fill="#b23a26" font-size="11.5">✗ much more complex to build</text>
+</svg>

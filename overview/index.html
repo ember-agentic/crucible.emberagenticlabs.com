@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Crucible in a minute — what it is, the problem it solves, and why it's different."><meta name="robots" content="noindex"><title>What is Crucible? — Overview</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;c8d0752fd6914f54af649db7410a5497&quot;}"></script><!-- End Cloudflare Web Analytics --><link rel="stylesheet" href="/_astro/about.CmtGwqlO.css">
+<link rel="stylesheet" href="/_astro/overview.BKXXmUC-.css"></head> <body class="antialiased"> <!-- Top bar: brand + escape hatches --> <header class="fixed top-0 inset-x-0 z-50 bg-background/80 backdrop-blur border-b border-border"> <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-8"> <a href="/" class="flex flex-col leading-tight tracking-tight"> <span class="text-[color:var(--color-ember)] text-base font-semibold">Crucible</span> <span class="text-muted-foreground text-[10px] font-mono uppercase tracking-widest mt-0.5">in a minute</span> </a> <div class="flex items-center gap-4"> <a href="/" class="text-sm text-muted-foreground hover:text-foreground transition-colors hidden sm:inline">Full site &rarr;</a> <a href="#" data-open-download class="inline-flex items-center bg-foreground text-background px-4 py-2 text-sm font-medium hover:bg-foreground/90 transition-colors">Download</a> </div> </div> </header> <!-- Dot navigation --> <nav class="deck-dots" aria-label="Slides"> <a href="#s1" data-dot="s1" aria-label="What it is"></a> <a href="#s2" data-dot="s2" aria-label="The problem"></a> <a href="#s3" data-dot="s3" aria-label="What it does"></a> <a href="#s4" data-dot="s4" aria-label="Where it fits"></a> <a href="#s5" data-dot="s5" aria-label="Why it's different"></a> <a href="#s6" data-dot="s6" aria-label="The proof"></a> <a href="#s7" data-dot="s7" aria-label="The call"></a> </nav> <main class="deck"> <!-- 1 — What it is --> <section id="s1" class="slide"> <div class="slide-inner"> <p class="eyebrow">01 — What it is</p> <h1 class="headline">Turn AI-generated code into software you can actually ship.</h1> <p class="body">
+Your AI coding tool writes code. Crucible is the free layer <em>above</em> it that directs
+          specialized agents through the whole job — requirements, design, build, test — and keeps it
+          coherent as it grows. It runs on the coding tools you already use; it isn't another one of them.
+</p> <p class="takeaway">The governed system above the coding agent — not another coding agent.</p> </div> <div class="scroll-hint" aria-hidden="true">scroll ↓</div> </section> <!-- 2 — The problem (dark) --> <section id="s2" class="slide slide--dark"> <div class="slide-inner"> <p class="eyebrow eyebrow--ember">02 — The problem</p> <h2 class="headline">AI coding tools give you code that runs. That's where they stop.</h2> <p class="body">
+Point a coding agent at real work and you get something that works in the moment — but
+          undocumented, untested, inconsistent across a growing codebase, and drifting further the longer the
+          project runs. Past a prototype, "it runs" isn't "it ships."
+</p> <p class="takeaway">The gap isn't the model's capability — it's everything that has to be true around the code.</p> </div> </section> <!-- 3 — What it does --> <section id="s3" class="slide"> <div class="slide-inner"> <p class="eyebrow">03 — What it does</p> <h2 class="headline">Structure built in as the work is created.</h2> <p class="body">
+Crucible enforces structure and quality at the <em>point of creation</em>, through governance —
+          so output is coherent by construction, not cleaned up after.
+</p> <ul class="points points--glyph"> <li> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="9" r="2.4"></circle><circle cx="17" cy="9" r="2.4"></circle><circle cx="12" cy="15.5" r="2.4"></circle></svg> <span><strong>Specialized agents</strong> — each conditioned to its role, not one generalist.</span> </li> <li> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3 L21 12 L12 21 L3 12 Z"></path></svg> <span><strong>Checks at the point of action</strong> — a bad step is refused, not flagged after.</span> </li> <li> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="2.5"></ellipse><path d="M5 6 v12 c0 1.4 3.1 2.5 7 2.5 s7 -1.1 7 -2.5 V6"></path></svg> <span><strong>One shared record</strong> — requirements, designs, decisions, code, and tests, linked and synced to git.</span> </li> </ul> <p class="takeaway">Output you can read, trust, and trace — and work that stays organized as it grows.</p> </div> </section> <!-- 4 — Where it fits --> <section id="s4" class="slide slide--muted"> <div class="slide-inner"> <p class="eyebrow">04 — Where it fits</p> <h2 class="headline">It runs on your coding agent — and governs the whole job.</h2> <div class="layers" aria-hidden="true"> <div class="layer layer--orch"> <span class="layer-tag">Crucible</span> <span class="layer-name">runs the whole governed dev process</span> <span class="layer-note">requirements → design → build → test, on a record you own</span> </div> <div class="layer-arrow">runs on ↓</div> <div class="layer layer--exec"> <span class="layer-tag">Coding agents</span> <span class="layer-name">Cursor · Claude Code · Copilot · Aider</span> <span class="layer-note">write the code, fast</span> </div> </div> <p class="body">
+Coding agents are execution engines — they write code, fast. Crucible sits <em>above</em> them and
+          runs the whole development process. Other tools orchestrate across the lifecycle too, but they're
+          enterprise cloud platforms. Crucible is the one that's complete, governed, and <em>yours</em> &mdash;
+          free, on your own keys, running locally.
+</p> <p class="takeaway">A complete, governed development system &mdash; free and local, not a service you rent.</p> </div> </section> <!-- 5 — Why it's different (dark) --> <section id="s5" class="slide slide--dark"> <div class="slide-inner"> <p class="eyebrow">05 — Why it's different</p> <h2 class="headline">One evolving solution, on a core that's yours.</h2> <p class="body">
+A better model is a more capable <em>individual</em>; the lasting advantage is the organization
+          around it — coordinated roles, governed process, one shared record. So Crucible compounds as models
+          improve, instead of being replaced by them.
+</p> <p class="body">
+It's one solution on a core you own — no re-wiring your stack every time the market ships something
+          new. Free, your own keys, no platform tax.
+</p> <p class="takeaway">Buy continuity, not a stack you keep rebuilding.</p> </div> </section> <!-- 6 — The proof (dark, metrics) --> <section id="s6" class="slide slide--dark"> <div class="slide-inner"> <p class="eyebrow">06 — The proof</p> <h2 class="headline">Built solo, in three months — with Crucible building much of Crucible.</h2> <div class="metrics"> <div class="metric"><span class="metric-n">3 months</span><span class="metric-l">solo, start to finish</span></div> <div class="metric"><span class="metric-n">1 operator</span><span class="metric-l">directed the agents &mdash; wrote none of the code</span></div> <div class="metric"><span class="metric-n">Platform-scale</span><span class="metric-l">released code in the size class of a mature platform like Redis</span></div> </div> <p class="body">
+One operator, three months: the platform itself, a visual-asset builder, a CRM in real use,
+          sites, a game, the release tooling.
+</p> <p class="takeaway">Honest about where it is: alpha, for individuals and small teams — a partnership, not autonomy.</p> </div> </section> <!-- 7 — The call --> <section id="s7" class="slide slide--cta"> <div class="slide-inner"> <p class="eyebrow">07 — Try it</p> <h2 class="headline">Try it. It's free.</h2> <p class="body">Point it at something real and see if it holds for you.</p> <div class="cta-row"> <a href="#" data-open-download class="btn btn--solid">Download — bring your own keys</a> <a href="/" class="btn btn--ghost">Explore the full site &rarr;</a> </div> <p class="takeaway">
+The goal: let people build software with their creativity and plain language — without having to be
+          a deep expert at every layer.
+</p> <p class="identity">
+Crucible is an AI software-development platform from Ember Agentic Labs — the alpha
+          is free to install at crucible.emberagenticlabs.com. Built by Tony Gibbons.
+</p> </div> </section> </main> <!-- Download dialog (shared pattern with the homepage) --> <dialog id="download-dialog" class="download-dialog"> <button type="button" class="download-close" data-close-download aria-label="Close">&times;</button> <div class="download-inner"> <p class="font-mono text-[10px] uppercase tracking-widest text-[color:var(--color-primary)] font-bold mb-3">Crucible Alpha v0.1.0</p> <h2 class="text-2xl sm:text-3xl font-serif font-light leading-tight mb-5">Download Crucible.</h2> <p class="text-sm text-muted-foreground mb-5" style="line-height:1.5;">Free to install, bring your own model keys. macOS · Windows · Linux.</p> <div class="download-platforms"> <div class="download-row"> <div class="download-row-label"><p class="download-platform-name">macOS</p><p class="download-platform-meta">.pkg — signed &amp; notarized</p></div> <a href="https://github.com/ember-agentic/crucible-releases/releases/download/v0.1.0-alpha/Crucible-0.1.0-alpha.pkg" class="download-btn">Download .pkg</a> </div> <div class="download-row"> <div class="download-row-label"><p class="download-platform-name">Windows</p><p class="download-platform-meta">Setup.exe — alpha builds unsigned</p></div> <a href="https://github.com/ember-agentic/crucible-releases/releases/download/v0.1.0-alpha/Crucible-0.1.0-alpha-Setup.exe" class="download-btn">Download .exe</a> </div> <div class="download-row"> <div class="download-row-label"><p class="download-platform-name">Terminal</p><p class="download-platform-meta">One-line install via <code>gh</code> CLI</p></div> <a href="/getting-started#terminal-install" class="download-btn download-btn-outline" data-close-download>View instructions &rarr;</a> </div> </div> <p class="download-footnote">Need help? See the <a href="/getting-started" data-close-download>install guide</a> or <a href="mailto:tony@emberagenticlabs.com">email Tony</a>.</p> </div> </dialog>  <script>
+    // Active-dot tracking via IntersectionObserver
+    const slides = document.querySelectorAll('.slide');
+    const dots = Object.fromEntries([...document.querySelectorAll('.deck-dots a')].map(a => [a.getAttribute('data-dot'), a]));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          document.querySelectorAll('.deck-dots a').forEach(d => d.classList.remove('is-active'));
+          dots[e.target.id]?.classList.add('is-active');
+        }
+      });
+    }, { threshold: 0.55 });
+    slides.forEach(s => io.observe(s));
+
+    // Keyboard nav
+    const deck = document.querySelector('.deck');
+    const ids = [...slides].map(s => s.id);
+    function current() {
+      const top = deck.scrollTop;
+      let idx = 0;
+      slides.forEach((s, i) => { if (s.offsetTop <= top + 5) idx = i; });
+      return idx;
+    }
+    document.addEventListener('keydown', (e) => {
+      if (['ArrowDown','PageDown',' '].includes(e.key)) { e.preventDefault(); const n = Math.min(current()+1, ids.length-1); slides[n].scrollIntoView({behavior:'smooth'}); }
+      if (['ArrowUp','PageUp'].includes(e.key)) { e.preventDefault(); const n = Math.max(current()-1, 0); slides[n].scrollIntoView({behavior:'smooth'}); }
+    });
+
+    // Download dialog
+    const dlg = document.getElementById('download-dialog');
+    document.querySelectorAll('[data-open-download]').forEach(b => b.addEventListener('click', (e) => { e.preventDefault(); dlg?.showModal(); }));
+    document.querySelectorAll('[data-close-download]').forEach(b => b.addEventListener('click', () => dlg?.close()));
+    dlg?.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  </script> </body> </html>

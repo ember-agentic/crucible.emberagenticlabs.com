@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="a2-ember" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#D95B43"/>
+    </marker>
+    <marker id="a2-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6F5AFA"/>
+    </marker>
+    <marker id="a2-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2c2cf"/>
+    </marker>
+  </defs>
+
+  <rect width="760" height="560" fill="#ffffff"/>
+
+  <!-- ================= faint spine (context) ================= -->
+  <g>
+    <!-- grey down-connectors -->
+    <line x1="300" y1="76"  x2="300" y2="138" stroke="#c2c2cf" stroke-width="1.5" marker-end="url(#a2-grey)"/>
+    <line x1="300" y1="186" x2="300" y2="248" stroke="#c2c2cf" stroke-width="1.5" marker-end="url(#a2-grey)"/>
+    <line x1="300" y1="296" x2="300" y2="358" stroke="#c2c2cf" stroke-width="1.5" marker-end="url(#a2-grey)"/>
+    <line x1="300" y1="406" x2="300" y2="468" stroke="#c2c2cf" stroke-width="1.5" marker-end="url(#a2-grey)"/>
+    <text x="308" y="111" fill="#9a9aa7" font-size="11.5">drove</text>
+    <text x="308" y="221" fill="#9a9aa7" font-size="11.5">specified</text>
+    <text x="308" y="331" fill="#9a9aa7" font-size="11.5">satisfied by</text>
+    <text x="308" y="441" fill="#9a9aa7" font-size="11.5">committed in</text>
+
+    <!-- spine nodes (light = context) -->
+    <g stroke="#cfcfda" fill="#ffffff" stroke-width="1.5">
+      <rect x="210" y="30"  width="180" height="46" rx="8"/>
+      <rect x="210" y="140" width="180" height="46" rx="8"/>
+      <rect x="210" y="250" width="180" height="46" rx="8"/>
+      <rect x="210" y="360" width="180" height="46" rx="8"/>
+      <rect x="210" y="470" width="180" height="46" rx="8"/>
+    </g>
+    <g fill="#3a3a44" font-size="14" text-anchor="middle">
+      <text x="300" y="58">Requirement</text>
+      <text x="300" y="168">Design</text>
+      <text x="300" y="278">Acceptance criterion</text>
+      <text x="300" y="388">Code</text>
+      <text x="300" y="498">Git commit</text>
+    </g>
+  </g>
+
+  <!-- ================= ① backward trace (ember) ================= -->
+  <g>
+    <!-- the bug -->
+    <rect x="44" y="361" width="116" height="44" rx="22" fill="#fdecea" stroke="#D95B43" stroke-width="1.8"/>
+    <text x="102" y="388" fill="#b23a26" font-size="13" text-anchor="middle" font-weight="600">a bug</text>
+    <!-- bug -> code -->
+    <line x1="160" y1="383" x2="206" y2="383" stroke="#D95B43" stroke-width="2.5" marker-end="url(#a2-ember)"/>
+    <!-- up the left edge, hop by hop -->
+    <!-- bug enters at Code, then the trace climbs hop-by-hop up the left edge -->
+    <line x1="196" y1="383" x2="196" y2="300" stroke="#D95B43" stroke-width="2.5" marker-end="url(#a2-ember)"/>
+    <line x1="196" y1="300" x2="196" y2="190" stroke="#D95B43" stroke-width="2.5" marker-end="url(#a2-ember)"/>
+    <line x1="196" y1="190" x2="196" y2="80"  stroke="#D95B43" stroke-width="2.5" marker-end="url(#a2-ember)"/>
+    <!-- short ticks from the trace channel into each node it reaches -->
+    <line x1="196" y1="285" x2="208" y2="285" stroke="#D95B43" stroke-width="1.6"/>
+    <line x1="196" y1="175" x2="208" y2="175" stroke="#D95B43" stroke-width="1.6"/>
+    <line x1="196" y1="65"  x2="208" y2="65"  stroke="#D95B43" stroke-width="1.6"/>
+    <!-- label -->
+    <text x="40" y="334" fill="#b23a26" font-size="12.5" font-weight="600">① trace backward</text>
+    <text x="40" y="350" fill="#9a9aa7" font-size="11">why the code exists</text>
+  </g>
+
+  <!-- ================= ② forward impact (purple) ================= -->
+  <g>
+    <!-- faint target nodes -->
+    <g stroke="#cfcfda" fill="#ffffff" stroke-width="1.5">
+      <rect x="560" y="150" width="160" height="40" rx="8"/>
+      <rect x="560" y="254" width="160" height="40" rx="8"/>
+      <rect x="560" y="358" width="160" height="40" rx="8"/>
+    </g>
+    <g fill="#777783" font-size="12.5" text-anchor="middle">
+      <text x="640" y="174">other test</text>
+      <text x="640" y="278">other code file</text>
+      <text x="640" y="382">dependent requirement</text>
+    </g>
+    <!-- purple fan from AC right edge -->
+    <path d="M390,268 C470,250 480,180 558,170" fill="none" stroke="#6F5AFA" stroke-width="2.3" marker-end="url(#a2-purple)"/>
+    <path d="M390,273 C475,273 480,274 558,274" fill="none" stroke="#6F5AFA" stroke-width="2.3" marker-end="url(#a2-purple)"/>
+    <path d="M390,278 C470,296 480,366 558,378" fill="none" stroke="#6F5AFA" stroke-width="2.3" marker-end="url(#a2-purple)"/>
+    <!-- label -->
+    <text x="612" y="120" fill="#5847d6" font-size="12.5" font-weight="600">② trace forward</text>
+    <text x="612" y="136" fill="#9a9aa7" font-size="11">what a change affects</text>
+  </g>
+</svg>

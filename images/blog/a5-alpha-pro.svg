@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="a5-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6F5AFA"/></marker>
+    <marker id="a5-ember" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D95B43"/></marker>
+    <marker id="a5-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3a9d5b"/></marker>
+    <marker id="a5-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a8a95"/></marker>
+    <g id="a5-person">
+      <circle cx="0" cy="-9" r="6.5" fill="#1a1a1a"/>
+      <path d="M-10,10 C-10,-2 10,-2 10,10 Z" fill="#1a1a1a"/>
+    </g>
+  </defs>
+
+  <rect width="880" height="500" fill="#ffffff"/>
+
+  <!-- ============================= ALPHA CARD ============================= -->
+  <rect x="24" y="58" width="396" height="420" rx="12" fill="#ffffff" stroke="#6F5AFA" stroke-width="2"/>
+  <text x="48" y="92" fill="#4a37c9" font-size="17" font-weight="700">Alpha</text>
+  <rect x="120" y="76" width="116" height="22" rx="11" fill="#eef9f0" stroke="#3a9d5b" stroke-width="1.3"/>
+  <text x="178" y="91" fill="#2f7d49" font-size="11" font-weight="600" text-anchor="middle">available now</text>
+  <text x="48" y="116" fill="#8a8a95" font-size="12">the orchestrator monitors and catches</text>
+  <line x1="24" y1="128" x2="420" y2="128" stroke="#eee" stroke-width="1"/>
+
+  <!-- orchestrator (referee, to the side) -->
+  <rect x="250" y="150" width="150" height="38" rx="8" fill="#ffffff" stroke="#6F5AFA" stroke-width="1.6"/>
+  <text x="325" y="173" fill="#4a37c9" font-size="12" text-anchor="middle">orchestrator · referees</text>
+
+  <!-- model (initiative starts here) -->
+  <rect x="60" y="172" width="150" height="46" rx="8" fill="#f1eefe" stroke="#6F5AFA" stroke-width="1.9"/>
+  <text x="135" y="194" fill="#4a37c9" font-size="13" font-weight="600" text-anchor="middle">model</text>
+  <text x="135" y="209" fill="#6a6a99" font-size="10.5" text-anchor="middle">acts</text>
+  <text x="135" y="158" fill="#b23a26" font-size="10.5" text-anchor="middle">▶ initiative starts here</text>
+
+  <!-- model submits to gate (bold) -->
+  <line x1="135" y1="218" x2="135" y2="266" stroke="#6F5AFA" stroke-width="2.6" marker-end="url(#a5-purple)"/>
+  <text x="143" y="246" fill="#6a6a99" font-size="10.5">submits</text>
+
+  <!-- gate -->
+  <path d="M135,272 l44,38 l-44,38 l-44,-38 z" fill="#ffffff" stroke="#6F5AFA" stroke-width="1.9"/>
+  <text x="135" y="314" fill="#4a37c9" font-size="12" text-anchor="middle">gate</text>
+
+  <!-- catch + retry loop back to model (dashed ember) -->
+  <path d="M95,300 C40,280 40,210 86,200" fill="none" stroke="#D95B43" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a5-ember)"/>
+  <text x="32" y="250" fill="#b23a26" font-size="10.5" text-anchor="middle" transform="rotate(-90 32 250)">catch + retry</text>
+
+  <!-- referee watches the loop (dashed, from orchestrator) -->
+  <path d="M250,180 C210,210 200,260 182,300" fill="none" stroke="#8a8a95" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#a5-ink)"/>
+
+  <!-- pass -> artifact -->
+  <line x1="135" y1="386" x2="135" y2="416" stroke="#3a9d5b" stroke-width="2.4" marker-end="url(#a5-green)"/>
+  <text x="143" y="404" fill="#2f7d49" font-size="10.5">passes</text>
+  <rect x="64" y="418" width="142" height="36" rx="8" fill="#eef9f0" stroke="#3a9d5b" stroke-width="1.6"/>
+  <text x="135" y="441" fill="#2f7d49" font-size="12" text-anchor="middle">accepted artifact</text>
+
+  <!-- human IN the loop -->
+  <use href="#a5-person" transform="translate(330,300)"/>
+  <text x="330" y="330" fill="#1a1a1a" font-size="11.5" font-weight="600" text-anchor="middle">you</text>
+  <text x="330" y="345" fill="#6a6a99" font-size="10.5" text-anchor="middle">close part of the loop</text>
+  <path d="M312,302 C250,300 220,310 184,316" fill="none" stroke="#1a1a1a" stroke-width="1.3" stroke-dasharray="3 4" marker-end="url(#a5-ink)"/>
+
+  <!-- ============================= GUTTER ============================= -->
+  <!-- (nothing crosses here) -->
+
+  <!-- ============================= PRO CARD ============================= -->
+  <rect x="460" y="58" width="396" height="420" rx="12" fill="#fcfcff" stroke="#6F5AFA" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="484" y="92" fill="#4a37c9" font-size="17" font-weight="700">Pro</text>
+  <rect x="556" y="76" width="124" height="22" rx="11" fill="#f6f5ff" stroke="#6F5AFA" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <text x="618" y="91" fill="#5847d6" font-size="11" font-weight="600" text-anchor="middle">in development</text>
+  <text x="484" y="116" fill="#8a8a95" font-size="12">the orchestrator drives</text>
+  <line x1="460" y1="128" x2="856" y2="128" stroke="#eee" stroke-width="1"/>
+
+  <!-- human ABOVE the loop -->
+  <use href="#a5-person" transform="translate(658,150)"/>
+  <text x="658" y="180" fill="#1a1a1a" font-size="11.5" font-weight="600" text-anchor="middle">you</text>
+  <text x="658" y="195" fill="#6a6a99" font-size="10.5" text-anchor="middle">supervise strategy</text>
+  <line x1="658" y1="200" x2="658" y2="224" stroke="#8a8a95" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#a5-ink)"/>
+
+  <!-- orchestrator drives (prominent) -->
+  <rect x="566" y="226" width="184" height="46" rx="8" fill="#f1eefe" stroke="#6F5AFA" stroke-width="2.2"/>
+  <text x="658" y="248" fill="#4a37c9" font-size="13" font-weight="700" text-anchor="middle">orchestrator</text>
+  <text x="658" y="263" fill="#6a6a99" font-size="10.5" text-anchor="middle">drives ▶ initiative starts here</text>
+
+  <!-- dispatches to three parallel sessions (bold) -->
+  <path d="M624,272 C560,296 535,312 509,328" fill="none" stroke="#6F5AFA" stroke-width="2.6" marker-end="url(#a5-purple)"/>
+  <line x1="652" y1="272" x2="645" y2="328" stroke="#6F5AFA" stroke-width="2.6" marker-end="url(#a5-purple)"/>
+  <path d="M692,272 C748,296 770,312 779,328" fill="none" stroke="#6F5AFA" stroke-width="2.6" marker-end="url(#a5-purple)"/>
+  <text x="642" y="300" fill="#6a6a99" font-size="10.5" text-anchor="middle">dispatches parameterized work</text>
+
+  <g fill="#ffffff" stroke="#6F5AFA" stroke-width="1.7">
+    <rect x="472" y="330" width="70" height="40" rx="8"/>
+    <rect x="607" y="330" width="70" height="40" rx="8"/>
+    <rect x="742" y="330" width="70" height="40" rx="8"/>
+  </g>
+  <g fill="#4a37c9" font-size="11.5" text-anchor="middle">
+    <text x="507" y="354">session</text>
+    <text x="642" y="354">session</text>
+    <text x="777" y="354">session</text>
+  </g>
+
+  <!-- submit to hardened gate -->
+  <path d="M507,370 C507,396 612,406 636,415" fill="none" stroke="#6F5AFA" stroke-width="1.8" marker-end="url(#a5-purple)"/>
+  <line x1="642" y1="370" x2="656" y2="399" stroke="#6F5AFA" stroke-width="1.8" marker-end="url(#a5-purple)"/>
+  <path d="M777,370 C777,396 704,406 680,415" fill="none" stroke="#6F5AFA" stroke-width="1.8" marker-end="url(#a5-purple)"/>
+
+  <path d="M658,400 l40,30 l-40,30 l-40,-30 z" fill="#ffffff" stroke="#6F5AFA" stroke-width="2"/>
+  <text x="658" y="426" fill="#4a37c9" font-size="11" text-anchor="middle">hardened</text>
+  <text x="658" y="439" fill="#4a37c9" font-size="11" text-anchor="middle">gate</text>
+
+  <!-- commit returns to orchestrator (bold, up a clear right channel) -->
+  <path d="M700,432 C812,432 830,348 830,300 C830,272 790,258 752,255" fill="none" stroke="#3a9d5b" stroke-width="2.4" marker-end="url(#a5-green)"/>
+  <text x="846" y="352" fill="#2f7d49" font-size="10.5" text-anchor="middle" transform="rotate(-90 846 352)">commits what passes</text>
+</svg>

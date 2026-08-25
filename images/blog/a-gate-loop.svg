@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" font-family="Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="gl-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6F5AFA"/></marker>
+    <marker id="gl-ember" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D95B43"/></marker>
+    <marker id="gl-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3a9d5b"/></marker>
+  </defs>
+
+  <rect width="800" height="300" fill="#ffffff"/>
+
+  <!-- LLM session -->
+  <rect x="24" y="108" width="156" height="58" rx="9" fill="#f1eefe" stroke="#6F5AFA" stroke-width="1.9"/>
+  <text x="102" y="132" fill="#4a37c9" font-size="13" font-weight="600" text-anchor="middle">LLM session</text>
+  <text x="102" y="149" fill="#6a6a99" font-size="10.5" text-anchor="middle">(reasoning step)</text>
+
+  <!-- submits -> gate -->
+  <line x1="180" y1="137" x2="276" y2="137" stroke="#6F5AFA" stroke-width="2.4" marker-end="url(#gl-purple)"/>
+  <text x="228" y="128" fill="#6a6a99" font-size="10.5" text-anchor="middle">submits</text>
+
+  <!-- gate -->
+  <path d="M330,85 l54,52 l-54,52 l-54,-52 z" fill="#ffffff" stroke="#6F5AFA" stroke-width="2"/>
+  <text x="330" y="133" fill="#4a37c9" font-size="12" text-anchor="middle">gate checks</text>
+  <text x="330" y="148" fill="#4a37c9" font-size="12" text-anchor="middle">the record</text>
+
+  <!-- pass -> accepted -->
+  <path d="M368,108 C440,86 470,80 522,80" fill="none" stroke="#3a9d5b" stroke-width="2.3" marker-end="url(#gl-green)"/>
+  <text x="452" y="74" fill="#2f7d49" font-size="10.5" text-anchor="middle">prerequisites present</text>
+  <rect x="524" y="58" width="240" height="46" rx="23" fill="#eef9f0" stroke="#3a9d5b" stroke-width="1.8"/>
+  <text x="644" y="86" fill="#2f7d49" font-size="12.5" font-weight="600" text-anchor="middle">accepted → advance state</text>
+
+  <!-- reject -> rejected -->
+  <path d="M368,166 C440,188 470,194 522,194" fill="none" stroke="#D95B43" stroke-width="2.3" marker-end="url(#gl-ember)"/>
+  <text x="452" y="214" fill="#b23a26" font-size="10.5" text-anchor="middle">prerequisites missing</text>
+  <rect x="524" y="172" width="240" height="46" rx="9" fill="#fdecea" stroke="#D95B43" stroke-width="1.8"/>
+  <text x="644" y="200" fill="#b23a26" font-size="12.5" font-weight="600" text-anchor="middle">rejected before execution</text>
+
+  <!-- structured error returns to the session (dashed ember loop along the bottom) -->
+  <path d="M524,210 C300,272 240,272 102,210 L102,168" fill="none" stroke="#D95B43" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#gl-ember)"/>
+  <text x="330" y="288" fill="#b23a26" font-size="11" font-style="italic" text-anchor="middle">structured error: what's missing + the exact fix → correct → resubmit</text>
+</svg>
